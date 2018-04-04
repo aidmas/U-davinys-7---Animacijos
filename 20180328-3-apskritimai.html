@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>"RGB-apskritimai"</title>
+    <style>
+        div{
+            position: relative;
+            width: 50vw;
+            height: 50vw;
+            background-color: rgb(190, 190, 190);
+            align-items: center;
+            margin: 0 auto;
+        }
+        div div{
+            position: absolute;
+            height: calc((100% - 2vw) * 0.6);
+            width: calc((100% - 2vw) * 0.6);
+            border-radius: 50%;
+        }
+        div div div{
+            background-color: rgba(0, 0, 0, 0);
+            width: 4vw;
+            height:4vw;
+            top: calc(50% - 2vw);
+            position: relative;
+            text-align: center;
+            font-size: 4vw;
+            color: white;
+        }
+        #red{
+            
+            background-color: rgba(255, 0, 0, 0.5);
+            border: 1vw solid red;
+            top: calc(20% - 0.4vw);
+            left: calc(20% - 0.4vw);
+            /*--------------*/
+            animation: raudonas 10s;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        #green{
+            background-color: rgba(0, 255, 0, 0.5);
+            border: 1vw solid green;
+            left: calc(20% - 0.4vw);
+            bottom: calc(20% - 0.4vw);
+            /*--------------*/
+            animation: zalias 10s;
+            animation-timing-function: ease-in-out;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        #blue{
+            background-color: rgba(0, 0, 255, 0.5);
+            border: 1vw solid blue;
+            right: calc(20% - 0.4vw);
+            bottom: calc(20% - 0.4vw);
+            /*--------------*/
+            animation: melynas 10s;
+            animation-timing-function: ease-in-out;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-delay: 2s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes raudonas {
+           0% {top: calc(20% - 0.4vw);}
+           11% {transform: rotate(360deg);  top: -30%; }
+           21% {transform: rotate(-360deg);  top: 30%; }
+           31% {transform: rotate(360deg);  top: -25%; }
+           41% {transform: rotate(-360deg);  top: 25%; }
+           51% {transform: rotate(360deg);  top: -20%; }
+           61% {transform: rotate(-360deg);  top: 20%; }
+           70% {transform: rotate(360deg);  top: -15%; }
+           78% {transform: rotate(-360deg);  top: 15%; }
+           85% {transform: rotate(360deg);  top: -10%; }
+           91% {transform: rotate(-360deg);  top: 10%; }
+           96% {transform: rotate(360deg);  top: -5%; }
+           100% {transform: rotate(-360deg);  top: 2%; }
+        }
+        @keyframes zalias {
+            0% {left: calc(20% - 0.4vw);  bottom: calc(20% - 0.4vw);  }
+           11% {transform: rotate(360deg);  left: -30%; bottom: -30%;}
+           21% {transform: rotate(-360deg);  left: 30%; bottom: 30%; }
+           31% {transform: rotate(360deg);  left: -25%; bottom: -25%; }
+           41% {transform: rotate(-360deg);  left: 25%; bottom: 25%; }
+           51% {transform: rotate(360deg);  left: -20%; bottom: -20%; }
+           61% {transform: rotate(-360deg);  left: 20%; bottom: 20%; }
+           70% {transform: rotate(360deg);  left: -15%; bottom: -15%; }
+           78% {transform: rotate(-360deg);  left: 15%; bottom: 15%; }
+           85% {transform: rotate(360deg);  left: -10%; bottom: -10%; }
+           91% {transform: rotate(-360deg);  left: 10%; bottom: 10%; }
+           96% {transform: rotate(360deg);  left: -5%; bottom: -5%; }
+           100% {transform: rotate(-360deg);  left: 2%; bottom: 2%; }
+        }
+        @keyframes melynas {
+            0% {right: calc(20% - 0.4vw);  bottom: calc(20% - 0.4vw);  }
+           11% {transform: rotate(360deg);  right: -30%; bottom: -30%;}
+           21% {transform: rotate(-360deg);  right: 30%; bottom: 30%; }
+           31% {transform: rotate(360deg);  right: -25%; bottom: -25%; }
+           41% {transform: rotate(-360deg);  right: 25%; bottom: 25%; }
+           51% {transform: rotate(360deg);  right: -20%; bottom: -20%; }
+           61% {transform: rotate(-360deg);  right: 20%; bottom: 20%; }
+           70% {transform: rotate(360deg);  right: -15%; bottom: -15%; }
+           78% {transform: rotate(-360deg);  right: 15%; bottom: 15%; }
+           85% {transform: rotate(360deg);  right: -10%; bottom: -10%; }
+           91% {transform: rotate(-360deg);  right: 10%; bottom: 10%; }
+           96% {transform: rotate(360deg);  right: -5%; bottom: -5%; }
+           100% {transform: rotate(-360deg);  right: 2%; bottom: 2%; }
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum in nisi id sagittis. Nunc ac iaculis orci. Cras eros massa, auctor rutrum nulla aliquam, feugiat laoreet urna. Proin a molestie quam. 
+    </p>
+    <div>
+        <div id="red"><div>R</div></div>
+        <div id="green"><div>G</div></div>
+        <div id="blue"><div>B</div></div>
+    </div>
+</body>
+</html>
